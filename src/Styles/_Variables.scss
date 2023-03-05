@@ -1,0 +1,51 @@
+//COLORS
+$backgroundGray: #f3f3f5;
+$headerGray: #e4e5e6;
+
+//TEXT COLORS
+$primaryTextColor: #2f3744;
+$secondaryTextColor: #717578;
+
+//SCREENS
+$xxl: 1560px;
+$xl: 1280px;
+
+//MIXINS
+
+//TEXT
+@mixin smallText {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin mediumText {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin giantText {
+  font-size: 46px;
+  line-height: 60px;
+
+  @media (max-width: $xl) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+@mixin tinyText {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+//LAYOUT
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+//DESIGN
+@mixin noBorderRadius($borderRadius) {
+  border: none;
+  border-radius: $borderRadius;
+}

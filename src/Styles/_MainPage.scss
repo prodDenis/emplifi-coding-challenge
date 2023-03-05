@@ -1,0 +1,214 @@
+.mainPage {
+  width: 100%;
+  height: 100%;
+  padding: 36px;
+  flex-direction: column;
+  @include flexCenter();
+
+  @media (max-width: $xxl) {
+    padding: 24px;
+  }
+
+  header {
+    height: 540px;
+    width: 100%;
+    max-width: 1788px;
+    background-color: $headerGray;
+    @include noBorderRadius(18px);
+    display: flex;
+
+    .spacer1 {
+      flex: 2;
+      min-width: 36px;
+      max-width: 240px;
+    }
+
+    .textArea {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin: auto;
+
+      @media (max-width: $xxl) {
+        width: 540px;
+      }
+      @media (max-width: $xl) {
+        width: 360px;
+      }
+
+      .breadcrumbs {
+        gap: 6px;
+        font-weight: 400;
+        @include smallText();
+        @include flexCenter();
+
+        @media (max-width: $xl) {
+          @include tinyText();
+        }
+
+        .bold {
+          @include flexCenter();
+          gap: 6px;
+          font-weight: 700;
+        }
+      }
+
+      h1 {
+        @include giantText();
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 500;
+        margin-top: 6px;
+        color: $secondaryTextColor;
+        @include mediumText();
+
+        @media (max-width: $xl) {
+          @include smallText();
+        }
+      }
+
+      .buttons {
+        margin-top: 24px;
+        gap: 36px;
+        @include flexCenter();
+        @include smallText();
+
+        .requestButton {
+          width: 120px;
+          height: 48px;
+          @include noBorderRadius(6px);
+          color: white;
+          background: linear-gradient(127.93deg, #2ebd7a -2.9%, #25a066 96.02%);
+          cursor: pointer;
+          font-weight: 700;
+
+          &:hover {
+            background: linear-gradient(
+              127.93deg,
+              #25a066 -2.9%,
+              #2ebd7a 96.02%
+            );
+          }
+        }
+        .requestSent {
+          width: 234px;
+          height: 48px;
+          border: 1px solid #25a066;
+          border-radius: 6px;
+          color: $primaryTextColor;
+          background: #defbe6;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+        }
+        .confirmed {
+          width: 16px;
+        }
+
+        a {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #0038e5;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .spacer2 {
+      flex: 1;
+      min-width: 120px;
+
+      @media (max-width: $xxl) {
+        min-width: 60px;
+      }
+    }
+
+    .visualArea {
+      width: 828px;
+      height: 600px;
+      background-color: rgba(106, 132, 226, 0.1);
+      border: none;
+      border-radius: 0px 18px 0px 0px;
+      display: flex;
+
+      .imageSafeArea {
+        width: 400px;
+        height: 400px;
+        margin: auto auto;
+        display: flex;
+      }
+      @media (max-width: $xxl) {
+        width: 616px;
+      }
+      @media (max-width: $xl) {
+        width: 476px;
+      }
+
+      span {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        @include smallText();
+      }
+    }
+  }
+
+  .headlines {
+    @include flexCenter();
+    justify-content: space-between;
+    padding: 96px 72px 0 72px;
+    width: 100%;
+    max-width: 1308px;
+
+    @media (max-width: $xl) {
+      padding: 96px 36px 0 36px;
+    }
+
+    .headline {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 360px;
+
+      @media (max-width: $xl) {
+        width: 240px;
+      }
+
+      h2 {
+        @include mediumText();
+        font-weight: 500;
+
+        @media (max-width: $xl) {
+          @include smallText();
+        }
+      }
+
+      p {
+        @include smallText();
+        font-weight: 400;
+        color: $secondaryTextColor;
+      }
+
+      .dot {
+        width: 24px;
+        height: 24px;
+        @include noBorderRadius(12px);
+        background-color: rgba(0, 56, 229, 0.15);
+        display: flex;
+        padding: 6px;
+
+        span {
+          width: 12px;
+          height: 12px;
+          @include noBorderRadius(6px);
+          background-color: #0038e5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.mainPage {
+  width: 100%;
+  height: 100%;
+  padding: 36px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1560px) {
+  .mainPage {
+    padding: 24px;
+  }
+}
+.mainPage header {
+  height: 540px;
+  width: 100%;
+  max-width: 1788px;
+  background-color: #e4e5e6;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+}
+.mainPage header .spacer1 {
+  flex: 2;
+  min-width: 36px;
+  max-width: 240px;
+}
+.mainPage header .textArea {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto;
+}
+@media (max-width: 1560px) {
+  .mainPage header .textArea {
+    width: 540px;
+  }
+}
+@media (max-width: 1280px) {
+  .mainPage header .textArea {
+    width: 360px;
+  }
+}
+.mainPage header .textArea .breadcrumbs {
+  gap: 6px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .mainPage header .textArea .breadcrumbs {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+.mainPage header .textArea .breadcrumbs .bold {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+}
+.mainPage header .textArea h1 {
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 700;
+}
+@media (max-width: 1280px) {
+  .mainPage header .textArea h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+.mainPage header .textArea p {
+  font-weight: 500;
+  margin-top: 6px;
+  color: #717578;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1280px) {
+  .mainPage header .textArea p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+.mainPage header .textArea .buttons {
+  margin-top: 24px;
+  gap: 36px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 18px;
+}
+.mainPage header .textArea .buttons .requestButton {
+  width: 120px;
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background: linear-gradient(127.93deg, #2ebd7a -2.9%, #25a066 96.02%);
+  cursor: pointer;
+  font-weight: 700;
+}
+.mainPage header .textArea .buttons .requestButton:hover {
+  background: linear-gradient(127.93deg, #25a066 -2.9%, #2ebd7a 96.02%);
+}
+.mainPage header .textArea .buttons .requestSent {
+  width: 234px;
+  height: 48px;
+  border: 1px solid #25a066;
+  border-radius: 6px;
+  color: #2f3744;
+  background: #defbe6;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.mainPage header .textArea .buttons .confirmed {
+  width: 16px;
+}
+.mainPage header .textArea .buttons a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0038e5;
+  font-weight: 400;
+}
+.mainPage header .spacer2 {
+  flex: 1;
+  min-width: 120px;
+}
+@media (max-width: 1560px) {
+  .mainPage header .spacer2 {
+    min-width: 60px;
+  }
+}
+.mainPage header .visualArea {
+  width: 828px;
+  height: 600px;
+  background-color: rgba(106, 132, 226, 0.1);
+  border: none;
+  border-radius: 0px 18px 0px 0px;
+  display: flex;
+}
+.mainPage header .visualArea .imageSafeArea {
+  width: 400px;
+  height: 400px;
+  margin: auto auto;
+  display: flex;
+}
+@media (max-width: 1560px) {
+  .mainPage header .visualArea {
+    width: 616px;
+  }
+}
+@media (max-width: 1280px) {
+  .mainPage header .visualArea {
+    width: 476px;
+  }
+}
+.mainPage header .visualArea span {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+}
+.mainPage .headlines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 96px 72px 0 72px;
+  width: 100%;
+  max-width: 1308px;
+}
+@media (max-width: 1280px) {
+  .mainPage .headlines {
+    padding: 96px 36px 0 36px;
+  }
+}
+.mainPage .headlines .headline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 360px;
+}
+@media (max-width: 1280px) {
+  .mainPage .headlines .headline {
+    width: 240px;
+  }
+}
+.mainPage .headlines .headline h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+@media (max-width: 1280px) {
+  .mainPage .headlines .headline h2 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+.mainPage .headlines .headline p {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #717578;
+}
+.mainPage .headlines .headline .dot {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(0, 56, 229, 0.15);
+  display: flex;
+  padding: 6px;
+}
+.mainPage .headlines .headline .dot span {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0038e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  color: #2f3744;
+  background-color: #f3f3f5;
+}
+
+.app {
+  display: flex;
+}
+
+/*# sourceMappingURL=Styles.css.map */
